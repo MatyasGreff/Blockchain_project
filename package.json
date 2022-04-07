@@ -1,5 +1,5 @@
 {
-  "name": "nci2022",
+  "name": "blockchain_project",
   "version": "1.0.0",
   "description": "To run a deterministic wallet:",
   "main": "contract.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eoinco/nci2022.git"
+    "url": "git+https://github.com/MatyasGreff/Blockchain_project.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eoinco/nci2022/issues"
+    "url": "https://github.com/MatyasGreff/Blockchain_project/issues"
   },
-  "homepage": "https://github.com/eoinco/nci2022#readme",
+  "homepage": "https://github.com/MatyasGreff/Blockchain_project#readme",
   "dependencies": {
     "big-number": "^2.0.0",
     "bip39": "^3.0.4",
