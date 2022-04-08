@@ -1,7 +1,7 @@
 {
   "name": "blockchain_project",
   "version": "1.0.0",
-  "description": "To run a deterministic wallet:",
+  "description": "Repository of the blockchain project, semester 2 PGDCLOUD NCI",
   "main": "contract.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,7 +24,7 @@
     "ethereumjs-wallet": "^1.0.2",
     "fs": "0.0.1-security",
     "keccak256": "^1.0.6",
-    "sodium-native": "^3.3.0",
-    "web3": "^1.7.1"
+    "typescript": "^4.6.3",
+    "web3": "^1.7.3"
   }
 }
