@@ -19,11 +19,12 @@ const Tx = require("ethereumjs-tx").Transaction;
 require('dotenv').config();
 
 infuraToken = process.env.INFURA_TOKEN;
+console.log(`infura token loaded: ${infuraToken}`);
 contractAddress = process.env.CONTRACT_ADDRESS;
 ownerAddress = process.env.OWNER_ADDRESS;
 privateKey = Buffer.from(process.env.SUPER_SECRET_PRIVATE_KEY, 'hex');
 
-//console.log(`infura token loaded: ${infuraToken}`);
+
 
 // https://ropsten.infura.io/v3/d46d3ae31c304b42813094d18609519e
 
@@ -50,7 +51,7 @@ const getName = async() => {
     console.log(`name is ${name}`);
     return name;
 }
-
+/*
 const getSymbol = async() => {
     let symbol = await contract.methods.symbol().call();
     console.log(`symbol is ${symbol}`);
@@ -117,6 +118,4 @@ const transferToken = async(fromAddress, toAddress, amount) => {
 // getAllContractInfo()
 
 module.exports = {getName, getSymbol, getBalance, getDecimals, getTotalSupply, transferToken}
-
-
-
+*/
