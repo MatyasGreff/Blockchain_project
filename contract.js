@@ -19,12 +19,12 @@ const Tx = require("ethereumjs-tx").Transaction;
 require('dotenv').config();
 
 infuraToken = process.env.INFURA_TOKEN;
-console.log(`infura token loaded: ${infuraToken}`);
 contractAddress = process.env.CONTRACT_ADDRESS;
 ownerAddress = process.env.OWNER_ADDRESS;
+addressToSendTo = '0x5ef5090b5701CE6E36939eddE4bD4D30966f2604'
 privateKey = Buffer.from(process.env.SUPER_SECRET_PRIVATE_KEY, 'hex');
 
-
+//console.log(`infura token loaded: ${infuraToken}`);
 
 // https://ropsten.infura.io/v3/d46d3ae31c304b42813094d18609519e
 
@@ -51,7 +51,7 @@ const getName = async() => {
     console.log(`name is ${name}`);
     return name;
 }
-/*
+
 const getSymbol = async() => {
     let symbol = await contract.methods.symbol().call();
     console.log(`symbol is ${symbol}`);
@@ -106,16 +106,15 @@ const transferToken = async(fromAddress, toAddress, amount) => {
     console.log(`tx sent. tx hash is ${txResponse.transactionHash}`);   
 }
 
-// const getAllContractInfo = async() => {
-//     getName();
-//     getSymbol();
-//     getDecimals();
-//     getTotalSupply();
-//     getBalance(ownerAddress);
-//     transferToken(ownerAddress, '0x5ef5090b5701CE6E36939eddE4bD4D30966f2604', 23000);
-// }
+const getAllContractInfo = async() => {
+     getName();
+     getSymbol();
+     getDecimals();
+     getTotalSupply();
+     getBalance(ownerAddress);
+     transferToken(ownerAddress, addressToSendTo , 23000);
+ }
 
-// getAllContractInfo()
+ getAllContractInfo()
 
 module.exports = {getName, getSymbol, getBalance, getDecimals, getTotalSupply, transferToken}
-*/
