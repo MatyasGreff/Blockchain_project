@@ -1,12 +1,12 @@
 services:
-  nci_erc20:
+  distributetoken:
     build:
       context: .
       dockerfile: Dockerfile
     networks:
-      - labnetwork
+      - tokenDistributionNetwork
 networks:
-  labnetwork:
+  tokenDistributionNetwork:
     driver: bridge
     ipam:
       config:
