@@ -105,7 +105,7 @@ const transferToken = async(fromAddress, toAddress, amount) => {
     console.log(`tx sent. block number is ${txResponse.blockNumber}`);
     console.log(`tx sent. tx hash is ${txResponse.transactionHash}`);   
 }
-
+/*
 const getAllContractInfo = async() => {
      getName();
      getSymbol();
@@ -116,5 +116,5 @@ const getAllContractInfo = async() => {
  }
 
  getAllContractInfo()
-
+*/
 module.exports = {getName, getSymbol, getBalance, getDecimals, getTotalSupply, transferToken}
