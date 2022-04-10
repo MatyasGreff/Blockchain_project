@@ -56,9 +56,14 @@ It is necessary to rebuild the image each time you modify any of the files/varia
 
 Make sure node is installed on your host machine, then:
 To install dependencies:
+
 ```$npm install```
+
 To create a deterministic wallet:
+
 ```$node crypto/wallet.js```
+
 To get information on contract, transfer to an account:(change variables, uncomment lines as needed in contract.js)
+
 ```$node contract.js```
 
