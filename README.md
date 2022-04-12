@@ -34,7 +34,7 @@ SUPER_SECRET_PRIVATE_KEY=
 ```
 Where INFURA_TOKEN is an infura.io issued token, CONTRACT_ADDRESS is the contract address of your token, OWNER_ADDRESS is the Metamask account ID(your own) on the ropsten or other test network. And SUPER_SECRET_PRIVATE_KEY is your secret key.
 ### Starting from zero ###
-Create Infura and Metamask accounts, then simply copy and paste contracts/openzep_erc20.sol into Remix IDE, change name and symbol on line 180 and 181 to your liking, compile, then deploy in the Injected Web3 environment. Now check etherscan and validate the contract, then update CONTRACT_ADDRESS with the contract address of this token, also update other variables in .env.
+Create Infura and Metamask accounts, get some ropsten Ether from a faucet (interaction with smart contracts costs Ether so you will need this), then simply copy and paste contracts/openzep_erc20.sol into Remix IDE, change name and symbol on line 180 and 181 to your liking, compile, then deploy in the Injected Web3 environment. Now check etherscan and validate the contract, then update CONTRACT_ADDRESS with the contract address of this token, also update other variables in .env.
 ### Run token distribution ###
 The simplest way is to run it in a docker container.
 Make sure to update accounts.txt with a list of accounts where you are looking to distribute tokens. They must be comma separated.
