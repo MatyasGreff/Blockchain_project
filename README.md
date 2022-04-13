@@ -50,7 +50,7 @@ Then run compose again:
 
 ```$docker-compose up```
 
-It is necessary to rebuild the image each time you modify any of the files/variables, so the changes are in the image.
+It is necessary to rebuild the image each time you modify any of the files/variables, so the changes are made in the image.
 
 # Other features
 
